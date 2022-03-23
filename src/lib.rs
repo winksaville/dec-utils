@@ -1,7 +1,6 @@
 use rust_decimal::prelude::*;
-use rusty_money::{Money, iso};
+use rusty_money::{iso, Money};
 use separator::FixedPlaceSeparatable;
-
 
 pub fn dec_to_string_or_empty(d: Option<Decimal>) -> String {
     if let Some(q) = d {
